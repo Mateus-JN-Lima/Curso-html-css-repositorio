@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Mídias HTML5</title>
+    <link rel="shortcut icon" href="imagens/icon.png">
+    <style>
+        body{
+            background-color: rgb(243, 236, 169);
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários disposítivos diferentes ou simplesmente aumente e diminua otamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reprozudir áudios em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/005-South - Friday Night Funkin OST_70k.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Inserindo Vídeos</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <video
+        src="midia/videoplayback.mp4" width="560" controls>
+    </video>
+    <h1>Inserindo Vídeos Externos</h1>
+    <p>Esse vídeo está vindo do YouTube MWAHAHAHHAA</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8UIfPZEaquY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
